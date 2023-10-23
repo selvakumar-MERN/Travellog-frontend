@@ -1,0 +1,155 @@
+
+.searchsection{
+    grid-area: searcharea;
+    background-color: blue;
+}
+.listsection{
+    grid-area: list;
+   
+}
+
+.container{
+    width: 80%;
+    margin: 10px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;  
+     grid-template-areas: 
+      "searcharea list list list "
+      ;
+      column-gap: 10px;
+}
+.card--body{
+    grid-area: cardbody;
+    width: 50rem;
+}
+.review{
+    grid-area: review;
+}
+.card{
+    border: 1px solid lightgray;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "cardimage cardbody review";
+    border-radius: 10px;
+    gap: 10px;
+    margin: 10px 0 0 0;
+    
+}
+
+.cardimage{
+    grid-area: cardimage;
+    border-radius: 10px;
+    position: relative;
+}
+.imageicon{
+    position: absolute;
+    margin: 8px;
+    color: white;
+    
+}
+
+.imageicon:hover{
+    color: red;
+    cursor: pointer;
+}
+.cardtitle{
+    color: slateblue;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+.cardtitle:hover{
+    color: black;
+}
+.carddesc{
+    margin-top: 25px;
+    font-size: 12px;
+   
+}
+.staricon{
+    color: gold;
+    position: relative;
+    font-size: 25px;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rating{
+    position: absolute;
+    margin: 2px 0 0 9px;
+
+}
+
+.pricebtn{
+    margin-top: 135px;
+    background-color: slateblue;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+.tags{
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    color: royalblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+@media (min-width:320px) and (max-width:480px){
+    .container{
+        width:100%;
+        grid-template-areas: 
+        "list list list list "
+        ;
+    }
+    .cardimage{
+        height: 100px;
+        width: 100px;
+    }
+    .cardtitle{
+        color: slateblue;
+        font-weight: bolder;
+        font-size: 9px;
+        
+    }
+    .carddesc{
+        margin-top: 3px;
+        font-size: 7px;
+        
+    }
+    .staricon{
+        font-size: 15px;
+        
+    }
+    .rating{
+        position: absolute;
+        margin: 1px 0 0 6px;
+        font-size: 8px;
+    }
+    .pricebtn{
+        margin-top: 70px;
+        font-size: 10px;
+        padding: 5px;
+       
+
+    }
+    .tags{
+        font-size: 6px;
+    }
+    .listsection{
+        margin: 0 10px 0 10px;
+    }
+  
+   
+}

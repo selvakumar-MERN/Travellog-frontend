@@ -1,0 +1,25 @@
+.rating-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rating-container .star{
+    cursor:'pointer';
+    background-color: white;
+}
+.star:hover{
+    color: gold;
+}
+#ratebutton{
+    cursor: pointer;
+}
+#ratebutton:hover{
+    color: royalblue;
+} 
+.star{
+    color: gold;
+}
+.starnull:hover{
+    color: gold;
+}

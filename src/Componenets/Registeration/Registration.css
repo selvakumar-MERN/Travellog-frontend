@@ -1,0 +1,64 @@
+.emailarea{
+   width: 350px;
+   margin: auto;
+}
+.input{
+    width: 100%;
+    padding: 8px 5px;
+     outline-color: royalblue;
+     border-radius: 5px;
+     border: 1px solid gray;
+     margin-top: 5px;
+     box-sizing: border-box;  
+}
+.label{
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+
+.formbutton{
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    padding: 15px 0;
+    margin: 15px 0;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.signinoptions{
+    margin:30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.signitem{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 20px;
+}
+.signitem:hover{
+    background-color: lightblue;
+}
+.terms{
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0;
+}
+.text-warning{
+    color: red;
+}
+.text-success{
+    color: green;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .emailarea{
+        width: 250px;
+        margin: auto;
+     }
+}
