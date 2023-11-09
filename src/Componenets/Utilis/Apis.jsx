@@ -8,6 +8,7 @@ const host ='https://travel-log-8b5m.onrender.com'
  export const emailverification=`${host}/user/emailverify`
  export const loginemail=`${host}/user/loginemail`
  export const login=`${host}/user/login`
+ export const userverify=`${host}/user/verifylogin`
  export const getonehotel=`${host}/user/getone`
  export const postreview=`${host}/user/postreview`
  export const getreview=`${host}/user/getreview`
