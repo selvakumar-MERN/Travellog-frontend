@@ -1,4 +1,4 @@
-const host ='http://localhost:3030'
+const host ='https://travel-log-8b5m.onrender.com'
  export const gethotelooty=`${host}/user/gethotel/ooty`
  export const gethotelkodai=`${host}/user/gethotel/kodaikanal`
  export const allhotel=`${host}/user/gethotel`
