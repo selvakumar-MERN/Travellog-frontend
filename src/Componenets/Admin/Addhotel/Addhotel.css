@@ -1,0 +1,51 @@
+.addhotel-container{
+    border: 1px solid black;
+    padding: 1rem;
+    
+}
+
+.hotelform-container{
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0;
+    gap: 0.2rem;
+    font-weight: bold;
+}
+.formgroup input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid black;
+    font-size: 0.9rem;
+    padding: 0 0 0 0.5rem;
+
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    
+}
+.checkboxlist{
+    display: flex;
+    gap: 0.3rem;
+}
+.form-buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 0.5rem;
+    margin: 1rem;
+}
+.form-buttons button{
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+}

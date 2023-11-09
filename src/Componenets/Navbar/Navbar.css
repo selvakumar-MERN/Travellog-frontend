@@ -1,0 +1,80 @@
+.navbar{
+    height: 50px;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+   
+}
+.navContainer{
+    width: 80%;
+    margin: 20px auto 20px auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.logo{
+    font-weight: 1000;
+    font-size: larger;
+}
+.navbutton{
+      padding: 10px;
+      margin-left: 20px;
+      cursor: pointer;
+      border: none;
+      background-color: white;
+      color: darkslateblue;
+      border-radius: 5px;
+    
+}
+.navbutton:hover{
+    background-color: lightblue;
+}
+.profilearea{
+    display: flex;
+    gap: 5px;
+}
+.profileimage{
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    
+}
+.dropdown{
+    position: absolute;
+    top: 6%;
+    right: 6.5%;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+}
+.dropdownclose{
+    display: none;
+}
+
+.dropdown li{
+    padding: 0.3rem 0.3rem;
+    cursor: pointer;
+}
+.dropdown li:hover{
+    background-color: royalblue;
+    color: white;
+}
+.dropdown span{
+    margin: 0 0 0 0.3rem;
+}
+
+@media only screen and (max-width: 768px){
+      .useremail{
+        display: none;
+      }
+}
