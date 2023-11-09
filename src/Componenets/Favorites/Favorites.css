@@ -1,0 +1,92 @@
+.favorite-container{
+    width: 80%;
+    margin: 10px auto 0 auto;
+}
+.favorite-container .card{
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0.5rem 0;
+}
+.favorite-container .card-body{
+    gap: 1rem;
+    color: gray;
+}
+.delete-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete-button button{
+    padding: 0.25rem 0.5rem;
+    font-size: 1.5rem;
+    border: lightgray;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: red;
+}
+.delete-button button:hover{
+    color: brown;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .favorite-container{
+        width: 90%;
+        margin: 10px auto 0 auto;
+    }
+    .favorite-container .card{
+        padding: 10px;
+        font-size: 8px;
+    }
+    .favorite-container .card-body{
+        gap: 0.3rem;
+        color: gray;
+    }
+    .fav-image{
+        height: 3rem;
+        width: 3rem;
+    }
+    .delete-button button{
+        padding: 0.25rem 0.5rem;
+        font-size: 10px;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .fav-image{
+        height: 5rem;
+        width: 5rem;
+    }
+    .favorite-container .card{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .favorite-container .card-body{
+        gap: 0.5rem;
+        
+    }
+    .delete-button button{
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .fav-image{
+        height: 5rem;
+        width: 5rem;
+    }
+    .favorite-container .card{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .favorite-container .card-body{
+        gap: 0.5rem;
+        
+    }
+    .delete-button button{
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+
+}
